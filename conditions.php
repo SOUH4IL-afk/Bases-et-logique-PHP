@@ -1,24 +1,33 @@
 <?php
 
-$age = 17;
+$age = 20;
 
 if ($age >= 18) {
-    echo "أنت راشد.";
+    echo "Vous êtes majeur.";
 } else {
-    echo "أنت قاصر.";
+    echo "Vous êtes mineur.";
 }
-?>  
-$jour = "Vendredi";
+
+$note = 14;
+
+if ($note >= 16) {
+    echo "Excellent";
+} elseif ($note >= 10) {
+    echo "Passable";
+} else {
+    echo "Échec";
+}
+
+$jour = "Lundi";
 
 switch ($jour) {
     case "Lundi":
-        echo "بداية الأسبوع";
+        echo "Début de la semaine";
         break;
-
     case "Vendredi":
-        echo "آخر يوم قبل عطلة نهاية الأسبوع";
+        echo "Fin de la semaine";
         break;
-
     default:
-        echo "يوم عادي";
+        echo "Jour normal";
 }
+
